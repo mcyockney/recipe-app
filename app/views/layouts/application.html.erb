@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipes app</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-default">
+  <nav class="navbar navbar-default">
+    <div class="container">
+    <%= link_to "my recipes", "", class: "btn btn-large btn-success", id: "logo" %>
+    <div class="nav_item">
+      <%= link_to "link1","", class: "btn btn-default btn-warning" %>
+    </div>
+    <div class="nav_item">
+      <%= link_to "link1","", class: "btn btn-default btn-warning" %>
+    </div>
+    <div class="nav_item">
+      <%= link_to "link1","", class: "btn btn-default btn-warning" %>
+    </div>
+    </div>
+  </div>
+  </nav>
+</header>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="footer">
+  <p> &copy; stuff 2015</p>
+</div>
+
+</body>
+</html>
