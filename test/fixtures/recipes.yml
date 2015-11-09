@@ -4,10 +4,10 @@ one:
   name: MyString
   summary: MyString
   description: MyString
-  references: 
+  chef_id: 
 
 two:
   name: MyString
   summary: MyString
   description: MyString
-  references: 
+  chef_id: 
