@@ -3,7 +3,8 @@ require 'test_helper'
 
 class RecipeTest < ActiveSupport::TestCase
   def setup
-    @recipe = Recipe.new(name: "recipe 1", summary: "this is a test recipe summary", description: "thids is the recipe description")
+    @chef = Chef.create(chefname: "bob", email: "bob@example.com")
+    @recipe = @chef.recipes.build(name: "recipe 1", summary: "this is a test recipe summary", description: "thids is the recipe description", chef_id: 1)
   end
   
   
@@ -55,6 +56,11 @@ class RecipeTest < ActiveSupport::TestCase
   
   test "summary legnth should not be too long" do
     @recipe.summary="a"*200
+    assert_not @recipe.valid?
+  end
+  
+  test "recipe should have a chef id" do
+    @recipe.chef_id=nil
     assert_not @recipe.valid?
   end
   
