@@ -18,3 +18,6 @@
 
 # Ignore Cloud9 files
 .c9/
+
+# Ignore public image uploads
+/public/uploads/*
