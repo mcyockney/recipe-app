@@ -10,6 +10,8 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
 
 gem 'email_validator'
+gem 'carrierwave', '0.10.0'
+gem 'mini_magick', '3.8.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
