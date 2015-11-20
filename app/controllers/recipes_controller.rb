@@ -13,7 +13,7 @@ class RecipesController < ApplicationController
     
     def create
         @recipe = Recipe.new(recipe_params)
-        @recipe.chef_id=3
+        @recipe.chef_id=1
         if @recipe.save
            flash[:success] = "Your recipe was created succewssfully"
            redirect_to recipes_path
