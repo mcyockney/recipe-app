@@ -17,6 +17,8 @@
 
     <% @recipes.each do |recipe| %>
     <div class="row">
+        <div class="col-md-4">
+            <%= image_tag(recipe.picture.url, size: "250x150", class: "gravatar") if recipe.picture? %>
         <div class="col-lg-6 well col-lg-offset-3" >
             <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
             <p><%= recipe.summary %></p>
@@ -30,8 +32,6 @@
                 <% end %>
             </div>
         </div>
-        <div class="col-md-4">
-            <%= image_tag(recipe.picture.url, size: "250x150", class: "gravatar") if recipe.picture? %>
         </div>
     </div>
     <hr />
