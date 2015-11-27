@@ -20,4 +20,6 @@
 .c9/
 
 # Ignore public image uploads
-/public/uploads/*.env
+/public/uploads/*
+.env
+
