@@ -14,7 +14,9 @@ Rails.application.routes.draw do
     member do
       post 'like'
     end
-    
   end
-
+  
+  resources :styles, only: [:new, :create, :show]
+  resources :ingredients, only: [:new, :create, :show]
+  
 end
