@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Chef.create(chefname: "Matthew", email: "matthewy@gmail.com", admin: "t") 
+Chef.create(chefname: "Matthew", email: "matthewy@gmail.com", password: "password", admin: "t") 
 
 Style.create(name: "Chinese")
 Style.create(name: "Mexican")
