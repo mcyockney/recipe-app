@@ -5,8 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Chef.create(chefname: "Chef1", email: "Email@email.email") 
+Chef.create(chefname: "Matthew", email: "matthewy@gmail.com", admin: "t") 
 
-Chef.create(chefname: "Chef2", email: "Email2@email2.email2") 
+Style.create(name: "Chinese")
+Style.create(name: "Mexican")
+Style.create(name: "Euopean")
+Style.create(name: "Nouvelle Cuisine")
 
-Recipe.create(name: "Fish pie", summary: "A pie using fish", description: "first, get some fish, then make a pie", chef: Chef.last) 
+Ingredient.create(name: "Flour")
+Ingredient.create(name: "Cream")
+Ingredient.create(name: "Chicken")
+Ingredient.create(name: "Beef")
+Ingredient.create(name: "Lamb")
+Ingredient.create(name: "Pork")
+Ingredient.create(name: "Pasta")
+Ingredient.create(name: "Rice")
+Ingredient.create(name: "Couscous")
