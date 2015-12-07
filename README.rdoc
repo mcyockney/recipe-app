@@ -23,3 +23,16 @@ Testing Specs for Recipes
         - ability to register, display profile, list chefs
         - restrict actions such as CRUD to recipes and Likes
         - restrict edit of recipes by other chefs
+        
+        
+    Review section
+    We need 
+        - a comment that belongs to a review and to a chef (similar to the like feature)
+            - migrations to create new table (body, pus chef/recipe id)
+            - build model, create tests for spec, add validations for review model
+            - build the associations
+            - test the assocaitons in console
+            - add routes (maybe nesting the revi in recipe)
+            - only authenticated chefs can post reviews
+            - add partial for recipe show page to add review
+    

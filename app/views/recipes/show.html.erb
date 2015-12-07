@@ -42,4 +42,15 @@
     </div>
 </div>
 
-<h5><%= link_to "Return to Recipes listing", recipes_path, class: "btn btn-warning btn-small" %></h5>
+<div class="col-md-8 well">
+    <div class="row">
+        <%= link_to "Return to Recipes listing", recipes_path, class: "btn btn-warning btn-small pull-left" %>
+        <%= link_to "Review this recipe", new_recipe_review_path(@recipe), class: "btn btn-warning btn-small pull-right" %>
+    </div>
+<% if @recipe.reviews.any? %>
+    <h1>Reviews</h1>
+    <table class="table-striped col-xs-12" ><tbody>
+    <p> <%= render @recipe.reviews %></p>
+    </tbody></table>
+<% end %>
+</div>
