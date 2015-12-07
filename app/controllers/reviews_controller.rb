@@ -6,9 +6,10 @@ class ReviewsController < ApplicationController
     end
     
     def create
+        #binding.pry
         @recipe = Recipe.find(params[:recipe_id])
         @review = @recipe.reviews.create(review_params)
-        @review.chef_id = current_user
+        @review.chef_id = current_user.id
         if @review.save
            flash[:success] = "Your review was created successfully"
            redirect_to recipe_path(@review.recipe)
